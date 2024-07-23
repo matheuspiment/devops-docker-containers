@@ -5,7 +5,7 @@ FROM node:18-slim
 WORKDIR /usr/src/app
 
 # Copy files or folders from source to the dest path in the image's filesystem.
-COPY package.json ./
+COPY package*.json ./
 
 # Execute any commands on top of the current image as a new layer and commit the results.
 RUN npm install
